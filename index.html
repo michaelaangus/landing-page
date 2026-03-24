@@ -2,9 +2,222 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Hello World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michaela Angus | Finance &amp; Analytics</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/stylesheet.css" />
   </head>
   <body>
-    <h1>Hello World</h1>
+
+    <!-- Navigation -->
+    <header class="site-header">
+      <nav class="nav-inner" aria-label="Main navigation">
+        <span class="nav-brand">Michaela Angus</span>
+        <ul class="nav-links" role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+
+      <!-- Hero -->
+      <section class="hero" id="hero" aria-labelledby="hero-name">
+        <div class="container hero-inner">
+          <img
+            src="images/headshot.jpeg"
+            alt="Michaela Angus professional headshot"
+            class="headshot"
+          />
+          <h1 id="hero-name">Michaela N. Angus</h1>
+          <p class="tagline">Finance &amp; Analytics Student &nbsp;|&nbsp; Curious, Driven, and Ready to Contribute</p>
+        </div>
+      </section>
+
+      <!-- About / Bio -->
+      <section class="section section-light" id="about" aria-labelledby="about-heading">
+        <div class="container">
+          <h2 id="about-heading">About Me</h2>
+          <div class="bio-block">
+            <p>
+              I'm a dual-degree student at the University of Iowa pursuing a B.B.A. in Finance and
+              a B.B.A. in Business Analytics &amp; Information Systems, graduating May 2026
+              (GPA 3.50/4.00 — Dean's List Fall 2022 and Spring 2023). In July 2026, I return
+              to Northern Trust in Chicago as a full-time employee, a role I'm genuinely excited
+              about.
+            </p>
+            <p>
+              What draws me to this intersection of finance and data analytics isn't the tools —
+              it's the questions. I like understanding the <em>why</em> behind business processes,
+              then figuring out how data can sharpen the answer. I take initiative, ask a lot of
+              questions, and care about contributing to a team in a meaningful way.
+            </p>
+            <p>
+              My dual degree isn't an undecided direction — it's an intentional one. I want to bring
+              both financial intuition and analytical capability to every problem I work on.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section" id="skills" aria-labelledby="skills-heading">
+        <div class="container">
+          <h2 id="skills-heading">Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h3>Tools</h3>
+              <ul class="tag-list" role="list">
+                <li><span class="tag tag-tool">Python</span></li>
+                <li><span class="tag tag-tool">SQL</span></li>
+                <li><span class="tag tag-tool">Microsoft Excel</span></li>
+                <li><span class="tag tag-tool">Microsoft PowerPoint</span></li>
+                <li><span class="tag tag-tool">GitHub</span></li>
+                <li><span class="tag tag-tool">Jupyter Notebook</span></li>
+                <li><span class="tag tag-tool">Orange</span></li>
+                <li><span class="tag tag-tool">Visual Studio Code</span></li>
+              </ul>
+            </div>
+            <div class="skill-group">
+              <h3>Methodologies</h3>
+              <ul class="tag-list" role="list">
+                <li><span class="tag tag-method">Regression Analysis</span></li>
+                <li><span class="tag tag-method">Pivot Tables</span></li>
+                <li><span class="tag tag-method">Financial Forecasting</span></li>
+                <li><span class="tag tag-method">Correlation</span></li>
+                <li><span class="tag tag-method">Data Visualization &amp; Manipulation</span></li>
+                <li><span class="tag tag-method">Optimization Modeling (Excel Solver)</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section section-light" id="projects" aria-labelledby="projects-heading">
+        <div class="container">
+          <h2 id="projects-heading">Projects</h2>
+          <div class="projects-grid">
+
+            <article class="project-card" aria-labelledby="proj1-title">
+              <h3 id="proj1-title">IMDb &amp; Box Office Analysis</h3>
+              <ul class="tag-list tag-list-card" role="list">
+                <li><span class="tag tag-tool">Python</span></li>
+                <li><span class="tag tag-tool">Jupyter Notebook</span></li>
+              </ul>
+              <p>
+                Scraped and merged two datasets — IMDb Movie Ratings and Box Office Sales — to
+                analyze and visualize the relationship between audience ratings and ticket sales
+                revenue. The project surfaced patterns in how critical reception translates (or
+                doesn't) into commercial performance across genres.
+              </p>
+            </article>
+
+            <article class="project-card" aria-labelledby="proj2-title">
+              <h3 id="proj2-title">Heart Attack Risk Data Mining</h3>
+              <ul class="tag-list tag-list-card" role="list">
+                <li><span class="tag tag-tool">Orange</span></li>
+              </ul>
+              <p>
+                Used data mining techniques to analyze health indicators — BMI, diabetes,
+                hypertension, and high blood pressure — and their relationship to heart attack
+                risk. Found that elevated BMI and the presence of conditions such as diabetes and
+                hypertension were strong predictors of increased risk. Evaluated model performance
+                using AUC.
+              </p>
+            </article>
+
+            <article class="project-card project-card-wide" aria-labelledby="proj3-title">
+              <div class="card-header-row">
+                <h3 id="proj3-title">Aflac AI Synthetic Survey Project</h3>
+                <span class="badge-inprogress" aria-label="Project status: In Progress">In Progress</span>
+              </div>
+              <ul class="tag-list tag-list-card" role="list">
+                <li><span class="tag tag-tool">Python</span></li>
+                <li><span class="tag tag-tool">Jupyter Notebook</span></li>
+                <li><span class="tag tag-tool">Web Scraping</span></li>
+              </ul>
+              <p>
+                Working in a team of six as part of the Business Analytics &amp; Information
+                Systems Capstone to help Aflac implement AI-generated synthetic survey responses.
+                The project scrapes and merges real customer reviews from Yelp, Reddit, and Google
+                Reviews to generate synthetic survey data — helping Aflac better understand
+                customer sentiment and identify areas for improvement.
+              </p>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section" id="contact" aria-labelledby="contact-heading">
+        <div class="container">
+          <h2 id="contact-heading">Get in Touch</h2>
+          <p class="contact-intro">
+            I'd love to connect. Reach out on LinkedIn, explore my work on GitHub, or send me
+            an email directly.
+          </p>
+          <ul class="contact-list" role="list">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/michaela-angus-42b321177"
+                class="contact-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Connect with Michaela on LinkedIn"
+              >
+                <svg class="contact-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/michaelaangus"
+                class="contact-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Michaela's projects on GitHub"
+              >
+                <svg class="contact-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                </svg>
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a
+                href="mailto:michaela-angus@uiowa.edu"
+                class="contact-link"
+                aria-label="Send Michaela an email"
+              >
+                <svg class="contact-icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2"/>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                </svg>
+                Email
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 Michaela N. Angus</p>
+      </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
   </body>
 </html>
